@@ -58,7 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
             return Center(child: CircularProgressIndicator());
           }
 
-          return Text("hello ${state.user['name']}");
+          return Center(
+            child: Text("hello ${state.user['name']}"),
+          );
         },
       ),
     );
